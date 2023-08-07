@@ -1,4 +1,4 @@
-# Fraud Detection Model
+# Modelo Detecção de Fraudes Bancárias
 
 Codificação em Python com uso TensorFlow para uma aplicação de Detecção de Fraudes Bancárias que utiliza um modelo de Machine Learning para prever se uma transação é fraudulenta ou não. O modelo é treinado com dados de transações bancárias e, em seguida, é usado para prever a probabilidade de uma nova transação ser fraudulenta. Os resultados são então enviados para um tópico Kafka.
 
