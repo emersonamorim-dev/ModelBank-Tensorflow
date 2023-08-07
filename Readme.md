@@ -19,10 +19,10 @@ Codificação em Python com uso TensorFlow para uma aplicação de Detecção de
 1. Clone o repositório
 2. Instale as dependências com `pip install -r requirements.txt`
 3. Configure as variáveis de ambiente no arquivo `.env`. As variáveis necessárias são:
-    - `DB_HOST`: O host do seu banco de dados PostgreSQL
-    - `DB_DATABASE`: O nome do seu banco de dados PostgreSQL
-    - `DB_USER`: O usuário do seu banco de dados PostgreSQL
-    - `DB_PASSWORD`: A senha do seu banco de dados PostgreSQL
+    - `DB_HOST`: O host do seu banco de dados Microsoft SQL
+    - `DB_DATABASE`: O nome do seu banco de dados Microsoft SQL
+    - `DB_USER`: O usuário do seu banco de dados Microsoft SQL
+    - `DB_PASSWORD`: A senha do seu banco de dados Microsoft SQL
     - `KAFKA_SERVERS`: A lista de servidores Kafka para se conectar
 
 ## Uso
