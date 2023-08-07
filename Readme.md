@@ -45,5 +45,19 @@ Este código irá:
 - KafkaProducerWrapper: Esta classe é responsável por enviar as previsões do modelo para um tópico Kafka.
 
 
+## Rodar via Docker
+
+Se você tem o Dockerfile para essa imagem, você pode recriá-la usando o comando docker build. Aqui está um exemplo de como você pode fazer isso:
+rode o comando: 
+### docker build -t seu_usuario/fraud-detection .
+
+Depois de criar a imagem, você precisa enviá-la para o registro Docker. Aqui está um exemplo de como você pode fazer isso:
+### docker push seu_usuario/fraud-detection
+
+Depois rodar o comando:
+### docker-compose up
+
+Depois de seguir os passos estará pronto para rodar a aplicação em cointeiner.
+
 ## Autor
 Emerson Amorim
