@@ -1,0 +1,29 @@
+version: '3.7'
+
+services:
+  kafka:
+    image: confluentinc/cp-kafka:5.5.1
+    container_name: kafka
+    ports:
+      - 9092:9092
+    environment:
+      - KAFKA_ADVERTISED_LISTENERS=PLAINTEXT://localhost:9092
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    container_name: sqlserver
+    ports:
+      - 1433:1433
+    environment:
+      - SA_PASSWORD=your_password
+  app:
+    image: your_username/fraud-detection
+    container_name: fraud-detection
+    restart: always
+    environment:
+      - DB_HOST=sqlserver
+      - DB_DATABASE=your_database
+      - DB_USER=your_username
+      - DB_PASSWORD=your_password
+      - KAFKA_SERVERS=kafka:9092
+    ports:
+      - 8080:8080
